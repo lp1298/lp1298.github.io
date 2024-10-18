@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Inscripción para el Retiro.</h1>
+
+<form action="https://formspree.io/f/xdkooydy" method="post">
+
+    <!-- Datos del Niño -->
+    <label for="nombre-nino">Nombre completo del niño:</label>
+    <input type="text" id="nombre-nino" name="Nombre del niño" required>
+
+    <label for="edad-nino">Edad del niño:</label>
+    <input type="text" id="edad-nino" name="Edad del niño" required>
+
+    <label for="grado-nino">Genero del niño:</label>
+    <input type="text" id="grado-nino" name="Grado escolar" required>
+
+    <label for="alergias-nino">¿Tiene alguna alergia?</label>
+    <textarea id="alergias-nino" name="Alergias"></textarea>
+
+    <label for="medicamentos-nino">¿Toma algún medicamento? Si es así, ¿cuál?</label>
+    <textarea id="medicamentos-nino" name="Medicamentos"></textarea>
+
+    <!-- Datos del Encargado -->
+    <label for="nombre-encargado">Nombre completo del encargado:</label>
+    <input type="text" id="nombre-encargado" name="Nombre del encargado" required>
+
+    <label for="nombre-encargado">Ingrese su direccion completa:</label>
+    <input type="text" id="nombre-encargado" name="Nombre del encargado" required>
+
+    <label for="relacion-encargado">Relación con el niño:</label>
+    <input type="text" id="relacion-encargado" name="Relación con el niño" required>
+
+    <label for="telefono-encargado">Número de teléfono del encargado:</label>
+    <input type="tel" id="telefono-encargado" name="Teléfono del encargado" required>
+
+    <label for="correo-encargado">Correo electrónico del encargado:</label>
+    <input type="email" id="correo-encargado" name="Correo electrónico del encargado" required>
+
+    <!-- Información de Emergencia -->
+    <label for="telefono-emergencia">Teléfono de emergencia:</label>
+    <input type="tel" id="telefono-emergencia" name="Teléfono de emergencia" required>
+
+    <label for="nombre-emergencia">Nombre de la persona de contacto en caso de emergencia:</label>
+    <input type="text" id="nombre-emergencia" name="Contacto de emergencia" required>
+
+    <label for="relacion-emergencia">Relación con el niño de la persona de emergencia:</label>
+    <input type="text" id="relacion-emergencia" name="Relación de emergencia" required>
+
+    <!-- Salud del Niño -->
+    <label for="condiciones-nino">¿El niño tiene alguna condición médica?</label>
+    <textarea id="condiciones-nino" name="Condiciones médicas"></textarea>
+
+    <label for="informacion-salud">¿Hay algo más que debamos saber sobre la salud del niño?</label>
+    <textarea id="informacion-salud" name="Información adicional de salud"></textarea>
+
+    <!-- Autorizaciones -->
+    <label for="autorizacion-fotos">¿Autoriza el uso de fotos o videos del niño durante el retiro?</label>
+    <textarea id="autorizacion-fotos" name="Autorización para fotos/videos"></textarea>
+
+
+    <!-- Detalles Adicionales -->
+    <label for="restricciones-alimenticias">¿Hay alguna comida que el niño no pueda comer?</label>
+    <textarea id="restricciones-alimenticias" name="Restricciones alimenticias"></textarea>
+
+    <label for="temores-nino">¿El niño tiene algún temor o algo que le preocupe sobre el retiro?</label>
+    <textarea id="temores-nino" name="Temores o preocupaciones"></textarea>
+
+    <label for="objetos-necesarios">¿Hay algo que el niño necesite llevar al retiro?</label>
+    <textarea id="objetos-necesarios" name="Objetos necesarios"></textarea>
+
+    <label for="comentarios-adicionales">¿Algún comentario adicional que quiera compartir sobre el niño?</label>
+    <textarea id="comentarios-adicionales" name="Comentarios adicionales"></textarea>
+
+    <!-- Botón de Envío -->
+    <button type="submit">Enviar</button>
+
+</form>
+</body>
+</html>

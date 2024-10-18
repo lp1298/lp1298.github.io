@@ -1,0 +1,70 @@
+[Install]
+DefDir=Internet Movil
+AppTitle=Internet Movil
+AppName=Internet Movil.exe
+Publisher=Huawei Technologies Co.,Ltd
+URLInfoAbout=http://www.huawei.com
+HelpLink=http://mobile.huawei.com
+
+[DRIVER]
+WLAN=0
+
+[FinishPage]
+run=
+runtext=
+
+[shortcut]
+dest1=Internet Movil.exe
+name1=Internet Movil
+dest2=uninst.exe
+name2=Uninstall
+usermanual=User Manual
+usermanualfile=
+
+[regedit]
+TCPWindowSize=64380
+reboot=false
+
+[customize]
+operator=Tigo_C288
+simtype=SIM/USIM
+uimtype=UIM
+
+[language]
+name1=Spanish           
+name2=English
+
+[System]
+FileVersion=1
+VVersion=100
+RVersion=001
+BuildVersion=300
+DebugVersion=05
+SPVersion=01
+CustomizeVersion=288
+
+[SPLASH]
+SHOW_PROMPT=NO
+PROMPT_MESSAGE=PromptInfo.exe
+LANGPATH=PromptInfo
+LANGFILE=English.dat
+
+[PNPCTRL]
+EXEC_REWIND=YES
+DEFAULT_TIMEOUT=10
+WIN2000_TIMEOUT=10
+
+[EHIDS_PRODUCT_VERSION]
+COMMENT=
+RUN_INSTALL_APP=YES
+RUN_CLIENT_APP=YES
+L_REG_PATH=SOFTWARE\Huawei technologies\Internet Movil
+APP_FILE_NAME=Internet Movil.exe
+APP_INSTALL_PATH=Internet Movil
+VALUE=11.300.05.01.288
+
+[SD_INFORMATION]
+SD_DETECT=YES
+ANTI_VIRUS_REG_PATH=SOFTWARE\Symantec\SPBBC
+ANTI_VIRUS_FILE_PATH=\Norton\NIS081550.exe
+REMIND_SENTENCE=Remind you to install antivirus software?
